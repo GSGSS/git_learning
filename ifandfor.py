@@ -21,14 +21,15 @@
 # for i in range(2000, 2012):
 #     print("%s 年是 %s 年" % (i, chinese_zodiac[i % 12]))
 
-#######while循环
+# while循环
 
-num=5
+import time
+num = 5
 while True:
+    num = num+1
+    if num == 10:
+        continue
     print(num)
-    num=num+1
-    if num>10:
+    time.sleep(1)
+    if num>19:
         break
-
-
-
